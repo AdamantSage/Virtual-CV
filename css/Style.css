@@ -1,0 +1,406 @@
+*{
+
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --bg-color: #111111;
+    /*
+    --second-bg-color: #151515;
+    --text-color: white;*/
+    --main-color: #f9004d;
+}
+.contact-me{
+    scroll-behavior: smooth;
+}
+.hero{
+    height: 100vh;
+    background-color: var(--bg-color);
+    background-size: cover;
+    background-position: center;
+}
+.about{
+    min-height: 100vh;
+    padding: 10rem 9% 10 rem;
+}
+.text-animation{
+    font-size:34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+.text-animation span{
+    position: relative;
+}
+.text-animation span::before{
+    content: 'Software Developer';
+    color: var(--main-color);
+    animation: words 16s infinite;
+}
+.text-animation span::after{
+    content: "";
+    background-color: var(--bg-color);
+    position: absolute;
+    width: 0;
+    height:100%;
+    border-left: 3px solid var(--bg-color);
+    right: -8px;
+    animation: cursor 0.6s infinite, typing 15s steps(30,end) infinite;
+}
+
+@keyframes cursor {
+    from { border-left-color: transparent; }
+    50% { border-left-color: var(--main-color); }
+    to { border-left-color: transparent; }
+}
+
+@keyframes words {
+    0%, 30.5% { content: 'Software Engineer'; } /* Adjusted percentages */
+    30.6%, 61.5% { content: 'NWU Student'; } /* Adjusted percentages */
+    61.6%, 100% { content: 'Web Developer'; } /* Adjusted percentages */
+}
+
+@keyframes typing {
+    0%, 30.5%, 61.5%, 100% { width: 0; } /* Adjusted percentages */
+    2%, 32.5%, 63.5% { width: calc(100% + 8px); } /* Adjusted percentages */
+    30%, 62%, 98% { width: 0; } /* Adjusted percentages */
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.logo{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+}
+span{
+    color: #f9004d;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+}
+nav ul li a{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover{
+    color: #f9004d;
+    transition: .4s;
+
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+h1{
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 75px;
+}
+
+h3{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+h4{
+    color: #f9004d;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.newsletter form{
+    width: 380px;
+    max-width:100%;
+    position: relative;
+}
+
+.newsletter form input:first-child{
+    display: inline-block;
+    width: 101%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid #f9004d;
+    outline: none;
+    border-radius: 30px;
+}
+
+.newsletter form input:last-child{
+    position: absolute;
+    display:inline-block;
+    outline: none;
+    border:none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #f9004d;
+    color: white;
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #958595;
+    top: 6px;
+    right: 1px;
+}
+
+.about{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #191919;
+}
+
+.about img{
+    height: auto;
+    width:250px;
+    position: relative;
+    top:1rem;
+    right: 1.5rem;
+    width:22vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--main-color);
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.about img:hover{
+    box-shadow: 0 0 50px var(--main-color),
+    0 0 100px var(--main-color);;
+}
+
+.about-text{
+    width: 550px;
+}
+.social-icons a{
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: 0.2rem solid var(--main-color);
+    font-size: 2.5rem;
+    border-radius: 50%;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease-in-out;
+}
+
+.social-icons a:hover{
+    color: white;
+    transform: scale(1.3)translateY(-5px);
+    box-shadow: 0 0 25px var(--main-color);
+    background-color: var(--main-color) ;
+}
+
+.main{
+   
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items:  center;
+    justify-content:space-around;
+}
+.about-text h2{
+    color: white;
+    font-size: 60px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-text h5{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.about-text p{
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+button{
+
+    background-color: rgb(0, 183, 255);
+    text-decoration: none;
+    color: white;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+
+}
+button:hover{
+
+    background-color: transparent;
+    border: 2px solid;
+    cursor: pointer;
+}
+
+.Projects{
+    background-image: url(../images/nissan.jpg);
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.title h2{
+    color: white;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+.box{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    min-height: 400px;
+    transition: 0.5s;
+    position: relative;
+}
+
+
+
+.card{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align:center ;
+}
+
+.card i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color:#f9004d;
+}
+
+h5{
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.pra p{
+    color: #fcfc;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+.card .button{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 22px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.card .button:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+
+.contact-me{
+    width: 100%;
+    height: 290px;
+    background: #191919;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:center;
+}
+
+.contact-me p{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.contact-me .button-two{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+.contact-me .button-two:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+footer{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: #101010;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer p:nth-child(1){
+    font-size: 30px;
+    color:white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+footer p:nth-child(2){
+    font-size: 17px;
+    color:white;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+}
+.Git{
+    display: flex;
+}
+
+.Git a{
+    width: 45px;
+    height: 45px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9004d;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.Git a:hover{
+    transform: scale(2);
+    transition: .3s;
+}
