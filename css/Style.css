@@ -12,9 +12,11 @@
     --text-color: white;*/
     --main-color: #f9004d;
 }
-.contact-me{
+html {
     scroll-behavior: smooth;
 }
+
+
 .hero{
     height: 100vh;
     background-color: var(--bg-color);
@@ -275,10 +277,21 @@ button:hover{
     min-height: 400px;
     transition: 0.5s;
     position: relative;
+ 
+}
+.card:hover{
+    background: #f9004d;
+    transform: scale(1.03);
+
 }
 
+.bx:hover{
+    color:white;
+}
 
-
+.fas:hover{
+    color:white;
+}
 .card{
     height: 365px;
     width: 335px;
@@ -289,6 +302,7 @@ button:hover{
     position: relative;
     overflow: hidden;
     text-align:center ;
+    
 }
 
 .card i{

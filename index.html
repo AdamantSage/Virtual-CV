@@ -19,7 +19,7 @@
         <nav>
             <h2 class ="logo">Portfo<span>lio</span></h2>
             <ul>
-                <li><a href ="#Home"> Home</a></li>
+                <li id ="Home"><a href ="#Home"> Home</a></li>
                 <li><a href ="#about"> About</a></li>
                 <li><a href ="#projects"> Projects</a></li>
                 <li><a href ="#skills"> Skills</a></li>
@@ -53,18 +53,19 @@
                 <p> Currently I am a University student doing my final year for Bsc in Inofrmation Technology
                     with a great aptitude for leaarning, having fun, getting the work done as efficiently and as best as possible. Let us change the world together one program at a time.
                 </p>
-                <button type  ="button">Let's Talk</button>
+                <button type="button" onclick="window.location.href='#Home';">Let's Talk</button>
+
             </div>
         </div>
     </section>
-    
+    <section class ="boxes">
     <div class ="Projects" id="projects">
         <div class ="title">
          <h2>My Projects</h2>
         </div>
         <div class ="box">
             <div class ="card">
-                <i class="fa-solid fa-bell"></i>
+                <i class='bx bx-wrench'></i>
                 <h5>Encryption App</h5>
                 <div class ="pra">
                     <p>An app that Encrypts and Decrypts images, zip files, and documents</p>
@@ -77,10 +78,10 @@
         
             <div class ="box">
                 <div class ="card">
-                    <i class="fa-brands fa-sketch"></i>
-                    <h5>Encryption App</h5>
+                    <i class='bx bxl-windows'></i>
+                    <h5>Website Portfolio</h5>
                     <div class ="pra">
-                        <p>An app that Encrypts and Decrypts images, zip files, and documents</p>
+                        <p>The directory of this wonderful website you see in front of you.</p>
     
                         <p style ="text-align: center;">
                             <a class ="button" href ="#">Read More</a>
@@ -91,9 +92,9 @@
                 <div class ="box">
                     <div class ="card">
                         <i class ="fas fa-bars"></i>
-                        <h5>Encryption App</h5>
+                        <h5>Web Application</h5>
                         <div class ="pra">
-                            <p>An app that Encrypts and Decrypts images, zip files, and documents</p>
+                            <p>In progress</p>
         
                             <p style ="text-align: center;">
                                 <a class ="button" href ="#">Read More</a>
@@ -105,6 +106,10 @@
             </div>
         </div>
     </div>
+
+</section>
+
+<section>
 <!---Contact Me-->
     <div class ="contact-me" id="contact-me" >
         <p>This is where you can find me.</p>
@@ -114,7 +119,8 @@
            
         </div>
 
-    </div> 
+    </div>
+</section>
 
     <!--footer-->
     <footer>
