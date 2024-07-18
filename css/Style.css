@@ -518,3 +518,46 @@ footer p:nth-child(2){
     cursor: pointer;
 }
 
+@media(max-width:1285px)
+{html{
+    font-size: 55%;
+}}
+.services-container{
+    padding-bottom: 7re;
+    grid-template-columns: repeat(2,1fr);
+    margin:0 5rem;
+}
+@media(max-width:991px)
+{
+    header{
+        padding: 2rem 3%;
+    }
+    section{
+        padding:10rem 3% 2rem;
+    }
+    .services{
+        padding-bottom: 7rem;
+    }
+    .footer{
+        padding: 2rem 3%;
+    }
+}
+
+@media(max-width:895px){
+    #menu-icon{
+        display:block;
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .boxes .card {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .boxes .card {
+        width: calc(100% - 40px);
+    }
+}
