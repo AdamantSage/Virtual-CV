@@ -376,25 +376,63 @@ h5{
 }
 footer{
     position: relative;
-    width: 100%;
-    height: 400px;
+    bottom: 0;
+    width: 100%; 
+    padding:5px 0;
+    height: auto;  
     background: #101010;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
 }
-footer p:nth-child(1){
-    font-size: 30px;
+footer .social-icons{
+    text-align: center;
+    padding-bottom: 0px;
+}
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 10px;
+    line-height: 1.2rem;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a{
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease-in-out;
+
+}
+.footer ul li a:hover{
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+.footer ul li 
+{
+    display:inline-block;
+    padding: 0 8px;
+}
+
+.footer .copyright{
+    margin-top:10px;
+    text-align: center;
+    font-size: 12px;
     color:white;
-    margin-bottom: 20px;
+}
+
+
+footer p:nth-child(1){
+    font-size: 20px;
+    color:white;
+    margin-bottom: 10px;
     font-weight: bold;
 }
 footer p:nth-child(2){
-    font-size: 17px;
+    font-size: 12px;
     color:white;
     width: 500px;
     text-align: center;
-    line-height: 26px;
+    line-height: 18px;
+    margin: 0 auto;
 }
 .Git{
     display: flex;
@@ -422,3 +460,61 @@ footer p:nth-child(2){
 .contact{
     background-color: var(--bg-color);
 }
+.contact h2{
+    margin-bottom: 3rem;
+    color: white;
+}
+
+.contact-section form{
+    max-width:7rem;
+    margin:1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.contact form{
+    max-width: 45rem;
+    margin: 0rem auto;
+    text-align: center;
+    
+}
+.contact form .input-box{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 0.7rem;
+    color:turquoise;
+    background:var(--bg-color);
+    border-radius: 0.8rem;
+    border: 2px solid #f9004d ;
+    margin: 1rem 0;
+    resize: none;
+}
+
+.contact form .btn{
+    margin-top: 2 rem;
+}
+
+.btn{
+    background-color: rgb(0, 183, 255);
+    text-decoration: none;
+    color: white;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.btn:hover{
+
+    background-color: transparent;
+    border: 2px solid;
+    cursor: pointer;
+}
+
