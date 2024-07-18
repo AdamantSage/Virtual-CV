@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 :root{
-    --bg-color: #111111;
+    --bg-color:#191919;
     /*
     --second-bg-color: #151515;
     --text-color: white;*/
@@ -108,10 +108,9 @@ nav ul li a:hover{
 }
 
 .content{
-    position: absolute;
-    top: 50%;
-    left: 8%;
-    transform: translateY(-50%);
+    max-width: 700px;
+    position: relative;
+    
 }
 h1{
     color: white;
@@ -564,6 +563,30 @@ footer p:nth-child(2){
 .javascript{
     width:45%;
     animation: javascript 3s;
+}
+
+.hme{
+    background: url(../images/man.jpg)no-repeat;
+    background-size:200px 300px;
+    background-position:right center;
+    display:flex;
+    align-items:center;
+}
+.hme-imghover{
+    position: absolute;
+    top: 0%;
+    right: 30px;
+    width: 500px;
+    height:100%;
+    background: transparent;
+    border: 2px solid red;
+    transition: 3s;
+
+
+}
+.hme-imghover:hover{
+    background: var(--bg-color);
+    opacity: .8;
 }
 
 @keyframes html{
