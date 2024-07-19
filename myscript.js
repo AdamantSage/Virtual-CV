@@ -1,5 +1,6 @@
 
 
+
 //Knowing when user eaches end of the page
 window.onscroll =() => {
     if(window.innerHeight + window.pageYOffset >= document.body.offsetHeight)
