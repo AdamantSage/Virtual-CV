@@ -32,9 +32,10 @@ html {
     font-size:34px;
     font-weight: 600;
     min-width: 280px;
+    z-index: 3;
 }
 .text-animation span{
-    position: relative;
+    position:absolute;
 }
 .text-animation span::before{
     content: 'Software Developer';
@@ -565,28 +566,57 @@ footer p:nth-child(2){
     animation: javascript 3s;
 }
 
-.hme{
-    background: url(../images/man.jpg)no-repeat;
-    background-size:200px 300px;
-    background-position:right center;
-    display:flex;
-    align-items:center;
+h4, h1, h3 {
+    position: relative; /* Ensure text is above image */
+    z-index: 2; /* Text has higher z-index than image */
 }
-.hme-imghover{
+.image-container{
+    position: relative;
+    bottom: 55%;
+    left: 820px;
+    width: 500px;
+    height:75%;
+    transition: left 0.5s ease, width 0.5s ease, height 0.5s ease; /* Smooth transition for the image container */
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .image-container {
+        left: 50px; /* Adjust left position */
+        width: 300px; /* Adjust width */
+        height: 50%; /* Adjust height */
+    }
+}
+
+@media (max-width: 480px) {
+    .image-container {
+        left: 10px; /* Further adjust left position */
+        width: 200px; /* Further adjust width */
+        height: 40%; /* Further adjust height */
+    }
+}
+.profile{
+    position: relative;
+    left: 100px;
+    height: 380px;
+    width:350px;
+    bottom: 100px;
+
+}
+
+.image-container{
     position: absolute;
-    top: 0%;
+    top: 50%;
     right: 30px;
     width: 500px;
-    height:100%;
+    height:75%;
     background: transparent;
     border: 2px solid red;
     transition: 3s;
-
-
 }
-.hme-imghover:hover{
+.image-container:hover{
     background: var(--bg-color);
-    opacity: .8;
+    opacity: 0.4;
 }
 
 @keyframes html{
