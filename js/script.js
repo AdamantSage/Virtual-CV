@@ -27,3 +27,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const button = document.getElementById('ProgressMessage');
+    if (button) {
+        button.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default link behavior
+            alert('This page is still in progress, try again later'); // Display the message
+        });
+    }
+});

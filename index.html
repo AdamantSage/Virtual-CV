@@ -43,9 +43,9 @@
     
                 <div class ="newsletter">
                     <form>
-                        <input type="email" name="email" id="mail" placeholder ="Enter Your Email">
-                        <input type ="submit" name ="submit" value ="Lets Chat">
-                    </form>
+                         <button class="btn" 
+                        onclick="window.open('./pdf/Michael Mathebula Curriculum Vitae.pdf')">Download CV</button>
+                    </form>`
                 </div>
             </div>
             
@@ -64,7 +64,7 @@
                 <p> Currently I am a University student doing my final year for Bsc in Inofrmation Technology
                     with a great aptitude for learning, having fun, getting the work done as efficiently and as best as possible. Let us change the world together one program at a time.
                 </p>
-                <button type="button" onclick="window.location.href='#Home';">Let's Talk</button>
+                <button type="button" onclick="window.location.href='https://github.com/AdamantSage';">View My Github</button>
 
             </div>
         </div>
@@ -82,7 +82,7 @@
                     <p>An app that Encrypts and Decrypts images, zip files, and documents</p>
 
                     <p style ="text-align: center;">
-                        <a class ="button" href ="#">Read More</a>
+                        <a class ="btn" href ="https://github.com/AdamantSage/EncryptionApp.git">View Source Code</a>
                     </p>
                 </div>
             </div>
@@ -95,7 +95,7 @@
                         <p>The directory of this wonderful website you see in front of you.</p>
     
                         <p style ="text-align: center;">
-                            <a class ="button" href ="#">Read More</a>
+                            <a class ="btn" href ="https://github.com/AdamantSage/Virtual-CV.git">View Source Code</a>
                         </p>
                     </div>
                 </div>
@@ -108,7 +108,7 @@
                             <p>In progress</p>
         
                             <p style ="text-align: center;">
-                                <a class ="button" href ="#">Read More</a>
+                                <a class ="btn" href ="#" id="ProgressMessage">View Source Code</a>
                             </p>
                             </div>
                         </div>
@@ -133,8 +133,28 @@
             <span class="bar"><span class="css"></span></span>
         </div>
         <div>
-            <h5>javascript</h5>
+            <h5>C#</h5>
+            <span class="bar"><span class="csharp"></span></span>
+        </div>
+        <div>
+            <h5>Javascript</h5>
             <span class="bar"><span class="javascript"></span></span>
+        </div>
+        <div>
+            <h5>C++</h5>
+            <span class="bar"><span class="cplus"></span></span>
+        </div>
+        <div>
+            <h5>Java</h5>
+            <span class="bar"><span class="java"></span></span>
+        </div>
+        <div>
+            <h5>SQL</h5>
+            <span class="bar"><span class="SQL"></span></span>
+        </div>
+        <div>
+            <h5>Python</h5>
+            <span class="bar"><span class="python"></span></span>
         </div>
     </div>
 </section>
@@ -146,19 +166,19 @@
 <section class="contact" id="contact-section">
     <h2 class ="heading" id="contact-me">Contact <span> Me</span>
     </h2>
-    <form action ="#">
+    <form action="https://formsubmit.co/michaelmathebula009@gmail.com" method="POST">
         <div class ="input-box">
-            <input type="text" placeholder ="Full Name">
-            <input type ="email" placeholder="Email">
+            <input type="text" name="name" placeholder ="Full Name">
+            <input type ="email" name="email" placeholder="Email">
             
         </div>
 
         <div class ="input-box">
-            <input type="number" placeholder ="Phone number">
-            <input type ="text" placeholder="Subject">
+            <input type="number" name="number" placeholder ="Phone number">
+            <input type ="text" name="subject" placeholder="Subject">
         </div>
 
-        <textarea name="" id="" cols="30" rows="10"
+        <textarea name="msg" id="" cols="30" rows="10"
         placeholder="Your Message"></textarea>
         <input type ="submit" value ="Send Message" class ="btn">
     </form>
@@ -168,8 +188,8 @@
     <!--footer-->
     <footer class ="footer">
             <div class ="social-icons">
-                <a href ="#"><i class='bx bxl-linkedin'></i></a>
-                <a href ="#"><i class='bx bxl-twitter'></i></a>
+                <a href ="https://www.linkedin.com/in/michael-mathebula-b7727622a"><i class='bx bxl-linkedin'></i></a>
+                <a href ="https://twitter.com/michael_thesage"><i class='bx bxl-twitter'></i></a>
 
             </div>
             

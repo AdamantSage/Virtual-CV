@@ -131,34 +131,17 @@ h4{
     font-size: 20px;
 }
 
-.newsletter form{
-    width: 380px;
-    max-width:100%;
+.newsletter{
+    width: 150px;
+    max-width:30%;
     position: relative;
 }
-
-.newsletter form input:first-child{
-    display: inline-block;
-    width: 101%;
-    padding: 14px 130px 14px 15px;
-    border: 2px solid #f9004d;
-    outline: none;
-    border-radius: 30px;
+.newsletter:hover{
+   
+        color: var(--main-color);
+        cursor: pointer;
 }
 
-.newsletter form input:last-child{
-    position: absolute;
-    display:inline-block;
-    outline: none;
-    border:none;
-    padding: 10px 30px;
-    border-radius: 30px;
-    background-color: #f9004d;
-    color: white;
-    box-shadow: 0px 0px 5px #000, 0px 0px 15px #958595;
-    top: 6px;
-    right: 1px;
-}
 
 .about{
     width: 100%;
@@ -520,9 +503,14 @@ footer p:nth-child(2){
 }
 .skill-section{
     background-color: var(--bg-color);
+    
+   
 }
 .skills{
-    width: 500px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    width: 100%;
     margin: auto auto;
     color: #fff;
     padding: 10px;
@@ -565,6 +553,97 @@ footer p:nth-child(2){
     width:45%;
     animation: javascript 3s;
 }
+.csharp{
+    width:82%;
+    animation: csharp 3s;
+}
+.cplus{
+    width:70%;
+    animation: cplus 3s;
+}
+.java{
+    width:87%;
+    animation: java 3s;
+}
+.SQL{
+    width:82%;
+    animation: SQL 3s;
+}
+.python{
+    width:80%;
+    animation: python 3s;
+}
+@keyframes html{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:90%;
+    }
+}
+@keyframes css{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:75%;
+    }
+}
+@keyframes javascript{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:45%;
+    }
+    
+}
+@keyframes csharp{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:82%;
+    }
+    
+}
+@keyframes cplus{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:70%;
+    }
+    
+}
+@keyframes java{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:87%;
+    }
+    
+}
+@keyframes SQL{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:82%;
+    }
+    
+}
+@keyframes python{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:80%;
+    }
+    
+}
+
 
 h4, h1, h3 {
     position: relative; /* Ensure text is above image */
@@ -601,9 +680,13 @@ h4, h1, h3 {
     height: 380px;
     width:350px;
     bottom: 100px;
+    border-radius: 50%;
 
 }
-
+.heading{
+    
+    text-align: center;
+}
 .image-container{
     position: absolute;
     top: 50%;
@@ -616,34 +699,8 @@ h4, h1, h3 {
 }
 .image-container:hover{
     background: var(--bg-color);
-    opacity: 0.4;
+    opacity: 0.2;
 }
-
-@keyframes html{
-    0%{
-        width:0%;
-    }
-    100%{
-        width:90%;
-    }
-}
-@keyframes css{
-    0%{
-        width:0%;
-    }
-    100%{
-        width:75%;
-    }
-}
-@keyframes javascript{
-    0%{
-        width:0%;
-    }
-    100%{
-        width:45%;
-    }
-}
-
 
 @media(max-width:1285px)
 {html{
