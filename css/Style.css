@@ -694,7 +694,6 @@ h4, h1, h3 {
     width: 500px;
     height:75%;
     background: transparent;
-    border: 2px solid red;
     transition: 3s;
 }
 .image-container:hover{

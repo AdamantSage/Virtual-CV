@@ -1,7 +1,4 @@
-alert("Hello World");
-const getUserSelectedText =() =>{
-    return window.getSelection().toString();
-}
+
 
 //Knowing when user eaches end of the page
 window.onscroll =() => {
