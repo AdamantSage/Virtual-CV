@@ -16,6 +16,7 @@
     </head>
 
     <body>
+       
         <!-- Hero section-->
     <div class="hero">
         <nav id="navbar">
@@ -28,7 +29,8 @@
                 <li><a href ="#contact-me"> Contact Me</a></li>
             </ul>
         </nav>
-        <section class="hme">
+        
+        <section class="hme hidden">
             <span class="hme-imghover"></span>
             <div class ="content">
                 <h4> Hello my name is</h4>
@@ -46,7 +48,7 @@
                          <button class="btn" 
                         onclick="window.open('./pdf/Michael Mathebula Curriculum Vitae.pdf')">Download CV</button>
                     </form>
-                    <div class ="orb"></div>
+                    <div class ="orb hidden"></div>
                 </div>
                 
             </div>
@@ -60,7 +62,7 @@
 
     <!---aBOUT SECTION--->
     <section class ="about" id="about">
-        <div class ="main">
+        <div class ="main hidden">
             <img src ="./images/cartoonMe.jpeg">
             <div class ="about-text">
                 <h2>About Me</h2>
@@ -74,11 +76,11 @@
         </div>
     </section>
     <section class ="boxes">
-    <div class ="Projects" id="projects">
-        <div class ="title">
+    <div class ="Projects " id="projects">
+        <div class ="title hidden">
          <h2>My Projects</h2>
         </div>
-        <div class ="box">
+        <div class ="box hidden">
             <div class ="card">
                 <i class='bx bx-wrench'></i>
                 <h5>Encryption App</h5>
@@ -91,7 +93,7 @@
                 </div>
             </div>
         
-            <div class ="box">
+            <div class ="box hidden">
                 <div class ="card">
                     <i class='bx bxl-windows'></i>
                     <h5>Website Portfolio</h5>
@@ -104,7 +106,7 @@
                     </div>
                 </div>
 
-                <div class ="box">
+                <div class ="box hidden">
                     <div class ="card">
                         <i class ="fas fa-bars"></i>
                         <h5>Web Application</h5>
@@ -125,7 +127,7 @@
 </section>
 
 <section class="skill-section" id="skill-section">
-    <div class="skills">
+    <div class="skills hidden">
         <h3>My Skills</h3>
 
         <div>
@@ -168,6 +170,7 @@
 
 <!---Contact Me-->
 <section class="contact" id="contact-section">
+    <div class ="contactk hidden">
     <h2 class ="heading" id="contact-me">Contact <span> Me</span>
     </h2>
     <form action="https://formsubmit.co/michaelmathebula009@gmail.com" method="POST">
@@ -186,18 +189,19 @@
         placeholder="Your Message"></textarea>
         <input type ="submit" value ="Send Message" class ="btn">
     </form>
+</div>
 </section>
 
 
     <!--footer-->
     <footer class ="footer">
-            <div class ="social-icons">
+            <div class ="social-icons hidden">
                 <a href ="https://www.linkedin.com/in/michael-mathebula-b7727622a"><i class='bx bxl-linkedin'></i></a>
                 <a href ="https://twitter.com/michael_thesage"><i class='bx bxl-twitter'></i></a>
 
             </div>
             
-            <ul class="list">
+            <ul class="list hidden">
                 <li>
                     <a href ="#">FAQ</a>
                 </li>
@@ -208,7 +212,7 @@
                     <a href ="#">Privacy policy</a>
                 </li>
             </ul>
-            <p class ="copyright">
+            <p class ="copyright hidden">
                 © Michael Mathebula | All Rights Reserved.
 
             </p>
@@ -218,6 +222,7 @@
     </footer>
 
         <!--javascrptreference below-->
-        <script src="./myscript.js"></script>
+  
+        <script defer src="./myscript.js"></script>
     </body>
 </html>
