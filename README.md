@@ -20,3 +20,5 @@ i aim to sharpen my html,css and javascript skills so that i may create better f
 ###Acknowledgements
 I want to acknowledge Jacob Aiden/Codehal for their amazing Youtube tutorial that practically teaches the flexibility and creativity to be shown using css.
 inspred by https://youtu.be/RroDdybvu5s?si=9QqtXMiILUYXWoh9
+I also would like to thank Beyond Fireship for explaining and showing how to use the animate on scroll effect on "Subtle, yet beautiful scroll animations" which can be found on the link below
+https://youtu.be/T33NN_pPeNI?si=8D9w5KLWrBUwShbR
