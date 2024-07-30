@@ -27,6 +27,8 @@ Responsive Design: Accessible and visually appealing on various devices.
 ##What i learned
 CSS can take plain boring hmtl and transform it into this visually appealing masterpiece. brushed up on my html fundamentals and learnt new ones. this process not only opened up new possibilities for design and layout but this process refurbushed and expanded my skillset boosting my confidence to continue practicing making more projects using html,css and javascript.
 
+I used netlify to deploy my website.(https://www.netlify.com/)
+
 ###Continued Development
 i aim to sharpen my html,css and javascript skills so that i may create better functional and useful projects for myself and people of interest.
 
