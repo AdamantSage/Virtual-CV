@@ -12,8 +12,9 @@ Getting Started
 To view and interact with the virtual CV, follow these steps:
 
 1.Clone the Repository:
-
+https://github.com/AdamantSage/Virtual-CV.git
 2.Navigate to the Project Directory:
+cd Virtual-CV
 3.Open the index.html File:
 You can open the file directly in your web browser or use an IDE like Visual Studio Code.
 
