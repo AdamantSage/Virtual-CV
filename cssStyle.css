@@ -386,7 +386,7 @@ button:hover{
     display: inline-block;
     
 }
-@media (max-width: 1024px), (max-width: 768px), (max-width: 480px), (max-width: 320px) {
+@media (max-width: 1024px), (max-width: 768px), (max-width: 480px), (max-width: 320px),(max-width: 100px){
     .title h2 {
         font-size: 10px; /* Further adjust font size for very small devices */
     }
