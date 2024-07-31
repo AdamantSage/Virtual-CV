@@ -32,6 +32,23 @@ I used netlify to deploy my website.(https://www.netlify.com/)
 ###Continued Development
 i aim to sharpen my html,css and javascript skills so that i may create better functional and useful projects for myself and people of interest.
 
+###Navigation
+There is a navbar that has Home,About,Projectsd<Skills<contact me wich will take you to the appropriate section on the weppage.
+Download CV button will allow you to download my latest CV that explains my other set of skills.
+
+Button that will enable you to view my github page with all my repositories
+
+in the webapge there are 3 prjoects currently being shown, 1 is an Encryption app which you can view the source coude by clicking on the button and it will take you to my github page which has its code.
+
+There is also a website card that will show you how ive created this wepsite by leading you to its source code in my github.
+
+the third is the web application that is still under development(will be done throughout the semester), the website cautions you that it is still not complete so try again later and this was done using javascript, maybe it would be uploaded hten(this has been purposely left this way, its not a mistake)
+
+Contact section: here you can put your information if you would like me to contact you regarding a particular problem, maybe you would like me to develop a website for you as well?! It uses Formsubmit which is a platform that helps send emails to me without having to do any nitty gritty long codes.
+this is their website: (https://formsubmit.co/).
+
+then finally there is a blue button that will take you all the way back to the top without you having to scroll up.
+
 ###Author
 [Website]-Michael Mathebula(https://michael-mathebula-porfolio.netlify.app/)
 
