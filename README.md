@@ -47,7 +47,7 @@ the third is the web application that is still under development(will be done th
 Contact section: here you can put your information if you would like me to contact you regarding a particular problem, maybe you would like me to develop a website for you as well?! It uses Formsubmit which is a platform that helps send emails to me without having to do any nitty gritty long codes.
 this is their website: (https://formsubmit.co/).
 
-then finally there is a blue button that will take you all the way back to the top without you having to scroll up.
+There is also my linkedin and twitter account found at the center of the bottom of the footer, then finally there is a blue button that will take you all the way back to the top without you having to scroll up.
 
 ###Author
 [Website]-Michael Mathebula(https://michael-mathebula-porfolio.netlify.app/)
