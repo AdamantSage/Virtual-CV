@@ -55,3 +55,30 @@ sections.forEach(section => {
     const hiddenElements = document.querySelectorAll(`.${section}`);
     hiddenElements.forEach((el) => observer.observe(el));
 });
+// Function to check the screen size and remove the image
+function handleResize() {
+    var profileImage = document.querySelector('.profile');
+
+    // Check if the screen width is less than or equal to 320px
+    if (window.innerWidth <= 320) {
+        if (profileImage) {
+            profileImage.parentNode.removeChild(profileImage); // Remove the image from the DOM
+        }
+    } else {
+        // Ensure the image is re-added if the screen size is greater than 320px
+        if (!document.querySelector('.profile')) {
+            var imageContainer = document.querySelector('.image-container');
+            var img = document.createElement('img');
+            img.className = 'profile';
+            img.src = './images/me.jpeg'; // Ensure the correct path to your image
+            img.alt = 'profile-picture';
+            imageContainer.appendChild(img); // Add the image back to the container
+        }
+    }
+}
+
+// Attach the function to the resize event
+window.addEventListener('resize', handleResize);
+
+// Initial check
+handleResize();
