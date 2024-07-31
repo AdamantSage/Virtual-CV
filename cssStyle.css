@@ -350,6 +350,7 @@ button:hover{
     width: 1130px;
     margin: 30px auto;
     text-align: center;
+   
 }
 .box{
     display: flex;
@@ -386,9 +387,10 @@ button:hover{
     display: inline-block;
     
 }
-@media (max-width: 1024px), (max-width: 768px), (max-width: 480px), (max-width: 320px),(max-width: 100px){
+@media(max-width: 768px), (max-width: 480px), (max-width: 320px),(max-width: 50px){
     .title h2 {
-        font-size: 10px; /* Further adjust font size for very small devices */
+        display: flex;
+
     }
 
     .card {
@@ -396,13 +398,17 @@ button:hover{
     }
 
     .btn {
-        font-size: 9px; /* Even smaller font size for very small devices */
-        padding: 6px 12px; /* Even smaller padding for buttons */
+        font-size: 5px; /* Even smaller font size for very small devices */
+        padding: 2px 2px; /* Even smaller padding for buttons */
+        border-radius: 10px; 
     }
 
     .pra p {
-        font-size: 5px; /* Further adjust paragraph font size */
+        font-size: 2px; /* Further adjust paragraph font size */
     }
+}
+.content{
+    margin-left: 5%;
 }
 .card:nth-child(2) {
     transition-delay: 200ms;
@@ -779,13 +785,19 @@ h4, h1, h3 {
     z-index: 2; /* Text has higher z-index than image */
 }
 .image-container{
-    position: relative;
+    position: absolute;
     bottom: 55%;
-    left: 820px;
+    top: 50%;
+    right: 30px;
+    left: 600px;
     width: 500px;
     height:75%;
     transition: left 0.5s ease, width 0.5s ease, height 0.5s ease; /* Smooth transition for the image container */
     z-index: 1;
+    background: transparent;
+    transition: 3s;
+   
+    
 }
 
 @media (max-width: 768px) {
@@ -805,26 +817,16 @@ h4, h1, h3 {
 }
 .profile{
     position: relative;
-    left: 100px;
     height: 380px;
     width:350px;
     bottom: 100px;
     border-radius: 50%;
-
 }
 .heading{
     
     text-align: center;
 }
-.image-container{
-    position: absolute;
-    top: 50%;
-    right: 30px;
-    width: 500px;
-    height:75%;
-    background: transparent;
-    transition: 3s;
-}
+
 .image-container:hover{
     background: var(--bg-color);
     opacity: 0.2;
