@@ -285,14 +285,14 @@ nav ul li a:hover{
 }
 
 .content{
-    max-width: 700px;
+    max-width: 600px;
     position: relative;
     
 }
 h1{
     color: white;
     margin: 20px 0px 20px;
-    font-size: 75px;
+    font-size: 65px;
 }
 
 h3{
@@ -875,23 +875,21 @@ h4, h1, h3 {
     bottom: 55%;
     top: 50%;
     right: 30px;
-    left: 600px;
     width: 500px;
     height:75%;
     transition: left 0.5s ease, width 0.5s ease, height 0.5s ease; /* Smooth transition for the image container */
     z-index: 1;
     background: transparent;
-    transition: 3s;
-   
-    
+    transition: 3s;   
 }
-@media (max-width: 1024px) {
-    .image-container {
-        left: 300px; /* Adjust left position */
-        width: 300px; /* Adjust width */
-        height: 50%; /* Adjust height */
+.profile{
+        position: relative;
+        height: 380px;
+        width:350px;
+        bottom: 100px;
+        border-radius: 50%;
     }
-}
+
 @media (min-width: 600px) {
     .image-container {
         left: 300px; /* Adjust left position */
@@ -909,7 +907,7 @@ h4, h1, h3 {
 
 @media (max-width: 480px) {
     .image-container {
-        left: 10px; /* Further adjust left position */
+        left: -10px; /* Further adjust left position */
         width: 20px; /* Further adjust width */
         height: 40%; /* Further adjust height */
     }
