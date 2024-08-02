@@ -431,7 +431,7 @@ button:hover{
 .title h2{
     color: white;
     font-size: 75px;
-    width: 1130px;
+    width: auto;
     margin: 30px auto;
     text-align: center;
    
@@ -955,19 +955,3 @@ h4, h1, h3 {
         display:block;
     }
 }
-
-/* Responsive styles */
-@media (max-width: 768px) {
-    .boxes .card {
-        width: calc(50% - 40px);
-    }
-}
-
-@media (max-width: 480px) {
-    .boxes .card {
-        width: calc(100% - 40px);
-    }
-}
-
-
-
