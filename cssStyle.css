@@ -111,10 +111,10 @@ body{
     }
 }
 .hero{
-    height: 100vh;
-    background-color: var(--bg-color);
+  background-color: var(--bg-color);
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 .about{
     min-height: 100vh;
@@ -163,14 +163,6 @@ body{
     30%, 62%, 98% { width: 0; } /* Adjusted percentages */
 }
 
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 45px;
-    padding-left: 8%;
-    padding-right: 8%;
-}
 
 .logo{
     color: white;
@@ -182,22 +174,114 @@ nav{
 span{
     color: #f9004d;
 }
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+
+    position: relative; /*consider removing this too*/
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
 nav ul li{
     list-style-type: none;
     display: inline-block;
     padding: 10px;
+    
 }
+
 nav ul li a{
     color:white;
     text-decoration: none;
     font-weight: bold;
     text-transform: capitalize;
+    
 }
 
 nav ul li a:hover{
     color: #f9004d;
     transition: .4s;
 
+}
+
+.menu-icon{
+    display: none;
+}
+.menu-icon i{
+    color: white;
+    font-size:30px;
+}
+.hme {
+    background-color: var(--bg-color);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+@media(max-width: 600px)
+{
+    nav ul{
+        position:absolute;
+        top: 90px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: var(--bg-color);
+        gap: 0;
+        overflow:hidden;
+        
+
+    }
+    nav ul li{
+        padding:5px;
+    }
+    .menu-icon{
+        display: block;
+        position: fixed;
+        z-index: 1001;
+        top: 5rem;
+        right: 1rem;
+    }
+    /* Initial state of the menu overlay */
+#menuList {
+    position: fixed; /* Stay in place */
+    top: 0; /* Align to top */
+    left: 0; /* Align to left */
+    width: 100%; /* Full width */
+    height: 100vh; /* Full height of the viewport */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    color: white; /* Text color */
+    overflow: hidden; /* Hide overflowing content */
+    max-height: 0; /* Start with a height of 0 for the transition */
+    transition: max-height 0.3s ease; /* Smooth transition for max-height */
+    z-index: 1000; /* Make sure it is above other content */
+    display: flex; /* Flexbox for centering items */
+    flex-direction: column; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-align: center; /* Center text */
+}
+
+/* Full-height and visible menu */
+#menuList.show {
+    max-height: 50vh; /* Full height when visible */
+}
+
+    .content{
+        bottom:10%;
+        
+    }
+    .hero .hme{
+        margin-top: 1cm;
+    }
 }
 
 .content{
@@ -799,12 +883,21 @@ h4, h1, h3 {
    
     
 }
-
+@media (max-width: 1024px) {
+    .image-container {
+        left: 300px; /* Adjust left position */
+        width: 300px; /* Adjust width */
+        height: 50%; /* Adjust height */
+    }
+}
 @media (max-width: 768px) {
     .image-container {
         left: 50px; /* Adjust left position */
         width: 300px; /* Adjust width */
         height: 50%; /* Adjust height */
+    }
+    .profile{
+        display:none;
     }
 }
 

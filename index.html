@@ -21,26 +21,29 @@
     <div class="hero">
         <nav id="navbar">
             <h2 class ="logo">Portfo<span>lio</span></h2>
-            <ul>
-                <li id ="Home"><a href ="#Home"> Home</a></li>
-                <li><a href ="#about"> About</a></li>
-                <li><a href ="#projects"> Projects</a></li>
-                <li><a href ="#skill-section"> Skills</a></li>
-                <li><a href ="#contact-me"> Contact Me</a></li>
-            </ul>
+            
+                <ul id ="menuList">
+                    <li><a href ="#Home"> Home</a></li>
+                    <li><a href ="#about"> About</a></li>
+                    <li><a href ="#projects"> Projects</a></li>
+                    <li><a href ="#skill-section"> Skills</a></li>
+                    <li><a href ="#contact-me"> Contact Me</a></li>
+                </ul>
+                <div class ="menu-icon">
+                <i class ="fas fa-bars" onclick="toggleMenu()" ></i>
+                </div>           
         </nav>
+        </div>
         
-        <section class="hme hidden">
+        <section class="hme">
             <span class="hme-imghover"></span>
-            <div class ="content">
-                <div class ="house">
+            <div class ="content hidden" id ="Home">
                     <h4> Hello my name is</h4>
                     <h1>Michael <span>Mathebula</span></h1>
 
                     <h3 class="text-animation">
                         I am a <span></span>
                     </h3>
-                </div>
                 
                 <div class="image-container">
                     <img class="profile" src="./images/me.jpeg" alt="profile-picture">
@@ -55,13 +58,8 @@
                 </div>
                 
             </div>
-            
-            
-
         </section>
-       
-        
-    </div>
+    
 
     <!---aBOUT SECTION--->
     <section class ="about" id="about">

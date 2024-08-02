@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-const sections =['hme','orb','main','title','box','skills','contactk','social-icons','list','copyright'];
+const sections =['content','orb','main','title','box','skills','contactk','social-icons','list','copyright'];
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) =>{
@@ -82,3 +82,15 @@ window.addEventListener('resize', handleResize);
 
 // Initial check
 handleResize();
+
+//for menu toggle
+let menuList = document.getElementById("menuList");
+
+function toggleMenu() {
+    if (menuList.classList.contains('show')) {
+        menuList.classList.remove('show');
+    } else {
+        menuList.classList.add('show');
+    }
+}
+
