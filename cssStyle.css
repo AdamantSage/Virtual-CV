@@ -282,10 +282,6 @@ nav ul li a:hover{
     .hero .hme{
         margin-top: 1cm;
     }
-
-    #menu-icon{
-        display:block;
-    }
 }
 
 .content{
@@ -494,11 +490,7 @@ button:hover{
     .pra p {
         font-size: 2px; /* Further adjust paragraph font size */
     }
-    #menu-icon{
-        display:block;
-    }
 }
-
 .content{
     margin-left: 5%;
 }
