@@ -893,7 +893,7 @@ h4, h1, h3 {
 
 @media (min-width: 600px) {
     .image-container {
-        left: 300px; /* Adjust left position */
+        left: 350px; /* Adjust left position */
         width: 300px; /* Adjust width */
         height: 50%; /* Adjust height */
     }
