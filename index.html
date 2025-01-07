@@ -1,223 +1,261 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       
-        <title>Personal Portfolio</title>
+<html lang="en">
 
-        <link rel = "stylesheet" type ="text/css" href ="./cssStyle.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <body>
-       
-        <!-- Hero section-->
+    <title>Personal Portfolio</title>
+
+    <link rel="stylesheet" type="text/css" href="./cssStyle.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Hero section-->
     <div class="hero">
         <nav id="navbar">
-            <h2 class ="logo">Portfo<span>lio</span></h2>
-            
-                <ul id ="menuList">
-                    <li><a href ="#Home"> Home</a></li>
-                    <li><a href ="#about"> About</a></li>
-                    <li><a href ="#projects"> Projects</a></li>
-                    <li><a href ="#skill-section"> Skills</a></li>
-                    <li><a href ="#contact-me"> Contact Me</a></li>
-                </ul>
-                <div class ="menu-icon">
-                <i class ="fas fa-bars" onclick="toggleMenu()" ></i>
-                </div>           
-        </nav>
-        </div>
-        
-        <section class="hme">
-            <span class="hme-imghover"></span>
-            <div class ="content hidden" id ="Home">
-                    <h4> Hello my name is</h4>
-                    <h1>Michael <span>Mathebula</span></h1>
+            <h2 class="logo">Portfo<span>lio</span></h2>
 
-                    <h3 class="text-animation">
-                        I am a <span></span>
-                    </h3>
-                
-                <div class="image-container">
-                    <img class="profile" src="./images/me.jpeg" alt="profile-picture">
-                </div>
-    
-                <div class ="newsletter">
-                    <form>
-                         <button class="btn" 
-                        onclick="window.open('./pdf/Michael Mathebula Curriculum Vitae.pdf')">Download CV</button>
-                    </form>
-                    <div class ="orb hidden"></div>
-                </div>
-                
+            <ul id="menuList">
+                <li><a href="#Home"> Home</a></li>
+                <li><a href="#about"> About</a></li>
+                <li><a href="#projects"> Projects</a></li>
+                <li><a href="#skill-section"> Skills</a></li>
+                <li><a href="#contact-me"> Contact Me</a></li>
+            </ul>
+            <div class="menu-icon">
+                <i class="fas fa-bars" onclick="toggleMenu()"></i>
             </div>
-        </section>
-    
+        </nav>
+    </div>
+
+    <section class="hme">
+        <span class="hme-imghover"></span>
+        <div class="content hidden" id="Home">
+            <h4> Hello my name is</h4>
+            <h1>Michael <span>Mathebula</span></h1>
+
+            <h3 class="text-animation">
+                I am a <span></span>
+            </h3>
+
+            <div class="image-container">
+                <img class="profile" src="./images/me.jpeg" alt="profile-picture">
+            </div>
+
+            <div class="newsletter">
+                <form>
+                    <button class="btn" onclick="window.open('./pdf/Michael Mathebula Curriculum Vitae.pdf')">Download
+                        CV</button>
+                </form>
+                <div class="orb hidden"></div>
+            </div>
+
+        </div>
+    </section>
+
 
     <!---aBOUT SECTION--->
-    <section class ="about" id="about">
-        <div class ="main hidden">
-            <img src ="./images/cartoonMe.jpeg">
-            <div class ="about-text">
+    <section class="about" id="about">
+        <div class="main hidden">
+            <img src="./images/cartoonMe.jpeg">
+            <div class="about-text">
                 <h2>About Me</h2>
                 <h5>Software Engineer <span>and More!</span></h5>
-                <p> Currently I am a University student doing my final year for Bsc in Information Technology
-                    with a great aptitude for learning, having fun, getting the work done as efficiently and as best as possible. Let us change the world together one program at a time.
+                <p>I am a BSc Information Technology graduate with a strong passion for learning, achieving efficiency,
+                 and delivering excellence. Dedicated to creating meaningful solutions, I aspire to make a difference in the world one
+                 program at a time. I uphold values such as integrity, honesty, teamwork, and a thoughtful balance of reason and
+                 rationality. My technical experience includes programming languages like C#, C++, Python, Java, and HTML.
+                 I am proficient in tools and platforms such as VS Code, Docker, GitHub, Postman, and Microsoft Office applications
+                 like Word, Excel, and PowerPoint. Additionally, I have experience in database management using MySQL Workbench and SQL Developer.
+                 My knowledge extends to cloud and deployment solutions, including Azure container instances and databases, as well as Netlify.
                 </p>
-                <button type="button" onclick="window.location.href='https://github.com/AdamantSage';">View My Github</button>
+                <button type="button" onclick="window.location.href='https://github.com/AdamantSage';">View My
+                    Github</button>
 
             </div>
         </div>
     </section>
-   
-    <div class ="Projects " id="projects">
-        <div class ="title hidden">
-         <h2>My Projects</h2>
+
+    <div class="Projects " id="projects">
+        <div class="title hidden">
+            <h2>My Projects</h2>
         </div>
-        <div class ="box hidden">
-            <div class ="card">
-                <i class='bx bx-wrench'></i>
-                <h5>Encryption App</h5>
-                <div class ="pra">
-                    <p>An app that Encrypts and Decrypts images, zip files, and documents</p>
+        <div class="carousel">
+            <div class="box hidden">
+                <div class="card">
+                    <i class="fas fa-bars"></i>
+                    <h5>VLR Application</h5>
+                    <div class="pra">
+                        <p>This resource application provides aspiring learners with access to bursaries, educational coding resources to enhance their skills.</p>
 
-                    <p style ="text-align: center;">
-                        <a class ="btn" href ="https://github.com/AdamantSage/EncryptionApp.git">View Source Code</a>
-                    </p>
+                        <p style="text-align: center;">
+                            <a class="btn" href="https://github.com/AdamantSage/VueLearnerResource">View Source Code</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <i class='bx bxl-windows'></i>
+                    <h5>Website Portfolio</h5>
+                    <div class="pra">
+                        <p>The directory of this wonderful website you see in front of you, made by HTML, CSS and JavaScript.</p>
+
+                        <p style="text-align: center;">
+                            <a class="btn" href="https://github.com/AdamantSage/Virtual-CV.git">View Source Code</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <i class="fas fa-bars"></i>
+                    <h5>StackMasters WebApp</h5>
+                    <div class="pra">
+                        <p>A React and React-Native Teacher and Learner System with web and mobile applications supported by a unified backend for secure user management and data storage.</p>
+
+                        <p style="text-align: center;">
+                            <a class="btn" href="https://github.com/AdamantSage/StackMasters-WebApp">View Source Code</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <i class="fas fa-bars"></i>
+                    <h5>PalletJack Website</h5>
+                    <div class="pra">
+                        <p>A business website to advertise palletjack services.
+                            <a href="https://rentvos.netlify.app/" target="_blank">View the website</a>.
+                        </p>
+                
+                        <p style="text-align: center;">
+                            <a class="btn" href="https://github.com/AdamantSage/RentvosWebsite">View Source Code</a>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <i class='bx bx-wrench'></i>
+                    <h5>Encryption App</h5>
+                    <div class="pra">
+                        <p>An app that Encrypts and Decrypts images, zip files, and documents</p>
+
+                        <p style="text-align: center;">
+                            <a class="btn" href="https://github.com/AdamantSage/EncryptionApp.git">View Source Code</a>
+                        </p>
+                    </div>
                 </div>
             </div>
-        
-            <div class ="card">
-                <i class='bx bxl-windows'></i>
-                <h5>Website Portfolio</h5>
-                <div class ="pra">
-                    <p>The directory of this wonderful website you see in front of you.</p>
 
-                    <p style ="text-align: center;">
-                        <a class ="btn" href ="https://github.com/AdamantSage/Virtual-CV.git">View Source Code</a>
-                    </p>
-                </div>
-            </div>
-
-            <div class ="card">
-                <i class ="fas fa-bars"></i>
-                <h5>Web Application</h5>
-                <div class ="pra">
-                    <p>In progress</p>
-
-                    <p style ="text-align: center;">
-                        <a class ="btn" href ="#" id="ProgressMessage">View Source Code</a>
-                    </p>
-                </div>
-            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
         </div>
     </div>
 
 
-<section class="skill-section" id="skill-section">
-    <h3 class ="h3skill">My Skills</h3>
-    <div class="skills hidden">
-        
-        <div>
-            <h5>html</h5>
-            <span class="bar"><span class="html"></span></span>
+    <section class="skill-section" id="skill-section">
+        <h3 class="h3skill">My Skills</h3>
+        <div class="skills hidden">
+
+            <div>
+                <h5>html</h5>
+                <span class="bar"><span class="html"></span></span>
+            </div>
+            <div>
+                <h5>css</h5>
+                <span class="bar"><span class="css"></span></span>
+            </div>
+            <div>
+                <h5>C#</h5>
+                <span class="bar"><span class="csharp"></span></span>
+            </div>
+            <div>
+                <h5>Javascript</h5>
+                <span class="bar"><span class="javascript"></span></span>
+            </div>
+            <div>
+                <h5>C++</h5>
+                <span class="bar"><span class="cplus"></span></span>
+            </div>
+            <div>
+                <h5>Java</h5>
+                <span class="bar"><span class="java"></span></span>
+            </div>
+            <div>
+                <h5>SQL</h5>
+                <span class="bar"><span class="SQL"></span></span>
+            </div>
+            <div>
+                <h5>Python</h5>
+                <span class="bar"><span class="python"></span></span>
+            </div>
         </div>
-        <div>
-            <h5>css</h5>
-            <span class="bar"><span class="css"></span></span>
-        </div>
-        <div>
-            <h5>C#</h5>
-            <span class="bar"><span class="csharp"></span></span>
-        </div>
-        <div>
-            <h5>Javascript</h5>
-            <span class="bar"><span class="javascript"></span></span>
-        </div>
-        <div>
-            <h5>C++</h5>
-            <span class="bar"><span class="cplus"></span></span>
-        </div>
-        <div>
-            <h5>Java</h5>
-            <span class="bar"><span class="java"></span></span>
-        </div>
-        <div>
-            <h5>SQL</h5>
-            <span class="bar"><span class="SQL"></span></span>
-        </div>
-        <div>
-            <h5>Python</h5>
-            <span class="bar"><span class="python"></span></span>
-        </div>
-    </div>
-</section>
+    </section>
 
 
 
 
-<!---Contact Me-->
-<section class="contact" id="contact-section">
-    <div class ="contactk hidden">
-    <h2 class ="heading" id="contact-me">Contact <span> Me</span>
-    </h2>
-    <form action="https://formsubmit.co/michaelmathebula009@gmail.com" method="POST">
-        <div class ="input-box">
-            <input type="text" name="name" placeholder ="Full Name">
-            <input type ="email" name="email" placeholder="Email">
-            
-        </div>
+    <!---Contact Me-->
+    <section class="contact" id="contact-section">
+        <div class="contactk hidden">
+            <h2 class="heading" id="contact-me">Contact <span> Me</span>
+            </h2>
+            <form action="https://formsubmit.co/michaelmathebula009@gmail.com" method="POST">
+                <div class="input-box">
+                    <input type="text" name="name" placeholder="Full Name">
+                    <input type="email" name="email" placeholder="Email">
 
-        <div class ="input-box">
-            <input type="number" name="number" placeholder ="Phone number">
-            <input type ="text" name="subject" placeholder="Subject">
-        </div>
+                </div>
 
-        <textarea name="msg" id="" cols="30" rows="10"
-        placeholder="Your Message"></textarea>
-        <input type ="submit" value ="Send Message" class ="btn">
-    </form>
-</div>
-</section>
+                <div class="input-box">
+                    <input type="number" name="number" placeholder="Phone number">
+                    <input type="text" name="subject" placeholder="Subject">
+                </div>
+
+                <textarea name="msg" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </form>
+        </div>
+    </section>
 
 
     <!--footer-->
-    <footer class ="footer">
-            <div class ="social-icons hidden">
-                <a href ="https://www.linkedin.com/in/michael-mathebula-b7727622a"><i class='bx bxl-linkedin'></i></a>
-                <a href ="https://twitter.com/michael_thesage"><i class='bx bxl-twitter'></i></a>
+    <footer class="footer">
+        <div class="social-icons hidden">
+            <a href="https://www.linkedin.com/in/michael-mathebula-b7727622a"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://twitter.com/michael_thesage"><i class='bx bxl-twitter'></i></a>
 
-            </div>
-            
-            <ul class="list hidden">
-                <li>
-                    <a href ="#">FAQ</a>
-                </li>
-                <li>
-                    <a href ="#">Services</a>
-                </li>
-                <li>
-                    <a href ="#">Privacy policy</a>
-                </li>
-            </ul>
-            <p class ="copyright hidden">
-                © Michael Mathebula | All Rights Reserved.
+        </div>
 
-            </p>
-            <button onclick="toTop()">Back to Top</button>
+        <ul class="list hidden">
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">Privacy policy</a>
+            </li>
+        </ul>
+        <p class="copyright hidden">
+            © Michael Mathebula | All Rights Reserved.
+
+        </p>
+        <button onclick="toTop()">Back to Top</button>
 
 
     </footer>
 
-        <!--javascrptreference below-->
-  
-        <script defer src="./myscript.js"></script>
-    </body>
+    <!--javascrptreference below-->
+
+    <script defer src="./myscript.js"></script>
+</body>
+
 </html>

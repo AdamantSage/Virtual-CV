@@ -94,3 +94,17 @@ function toggleMenu() {
     }
 }
 
+//FOR CARD CAROUSEL,box, card
+
+const prevButton = document.querySelector('.prev');
+const nextButton = document.querySelector('.next');
+const box = document.querySelector('.box');
+const cardWidth = document.querySelector('.card').offsetWidth; // Width of a single card
+
+prevButton.addEventListener('click', () => {
+    box.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+});
+
+nextButton.addEventListener('click', () => {
+    box.scrollBy({ left: cardWidth, behavior: 'smooth' });
+});

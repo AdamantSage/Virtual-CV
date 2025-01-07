@@ -429,14 +429,24 @@ button:hover{
     text-align: center;
    
 }
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 100%; /* Adjust the width of the carousel */
+    margin: 0 auto;
+    display:flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    
+}
+
 .box{
     display: flex;
-    justify-content: center ;
-    align-items: center;
-    min-height: 400px;
-    transition: 0.5s;
-    position: relative;
- 
+    transition: transform 0.5s ease-in-out;
+   flex-wrap: nowrap;
+   width: fit-content;
 }
 .card:hover{
     background: #f9004d;
@@ -452,17 +462,49 @@ button:hover{
     color:white;
 }
 .card{
-    height: 365px;
-    width: 335px;
-    padding: 20px 35px;
+    min-width: calc(30% - 3rem);
+    height: 300px;
+    padding: 10px;
     background: #191919;
     border-radius: 20px;
     margin: 15px;
     position: relative;
     overflow: hidden;
     text-align:center ;
-    display: inline-block;
-    
+    box-sizing: border-box;
+    flex: 0 10% 15%;
+    scroll-snap-align: start; /* Aligns the card to the start on scroll */
+
+   
+}
+.carousel .box {
+    overflow-x: auto; /* Allow horizontal scrolling for the hidden cards */
+    scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for a cleaner look */
+.carousel .box::-webkit-scrollbar {
+    display: none;
+}
+
+button.prev,
+button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 1000;
+}
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
 }
 
 @media(max-width: 768px), (max-width: 480px), (max-width: 320px),(max-width: 50px){
